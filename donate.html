@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Donation Page</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:linear-gradient(120deg,#43cea2,#185a9d);
+}
+
+/* HEADER */
+.header{
+  background:white;
+  padding:15px;
+  text-align:center;
+  font-size:22px;
+  font-weight:bold;
+  color:#185a9d;
+}
+
+/* HERO SECTION */
+.hero{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  padding:30px;
+  color:white;
+  flex-wrap:wrap;
+}
+
+.hero img{
+  width:280px;
+  border-radius:15px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.hero-text{
+  max-width:400px;
+}
+
+.hero-text h2{
+  font-size:28px;
+}
+
+.hero-text p{
+  font-size:14px;
+  line-height:1.6;
+}
+
+/* CARDS */
+.container{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+
+.card{
+  width:240px;
+  background:white;
+  margin:10px;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.2);
+  text-align:center;
+}
+
+.card h3{
+  color:#185a9d;
+}
+
+button{
+  padding:10px;
+  width:80%;
+  border:none;
+  background:#ff5722;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* FORM */
+.form-box{
+  width:320px;
+  margin:30px auto;
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.2);
+  text-align:center;
+}
+
+input,textarea{
+  width:90%;
+  padding:10px;
+  margin:8px 0;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+.form-box h3{
+  color:#185a9d;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+🌱 Food Donation Dashboard
+</div>
+
+<!-- HERO SECTION -->
+<div class="hero">
+
+  <div class="hero-text">
+    <h2>🍲 Share Food, Share Happiness</h2>
+    <p>
+      Donating food is not just giving leftovers,
+      it is giving life, hope and happiness to someone in need.
+      Join us and help reduce food waste in society.
+    </p>
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1604908177522-040c6b9b6f5d" alt="Food Donation">
+
+</div>
+
+<!-- INFO CARDS -->
+<div class="container">
+
+  <div class="card">
+    <h3>🍛 Available Food</h3>
+    <p>Rice, Roti, Fruits</p>
+    <button>View</button>
+  </div>
+
+  <div class="card">
+    <h3>👨‍👩‍👧 Donors</h3>
+    <p>20 Active Users</p>
+    <button>Check</button>
+  </div>
+
+  <div class="card">
+    <h3>📦 Requests</h3>
+    <p>10 Pending</p>
+    <button>Open</button>
+  </div>
+
+</div>
+
+<!-- DONATION FORM -->
+<div class="form-box">
+
+  <h3>🍲 Donate Food Now</h3>
+
+  <input id="food" placeholder="Food Type">
+  <input id="qty" placeholder="Quantity">
+  <textarea id="addr" placeholder="Pickup Address"></textarea>
+
+  <button onclick="submitDonation()">Submit Donation</button>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+function submitDonation(){
+
+  let food = document.getElementById("food").value;
+  let qty = document.getElementById("qty").value;
+  let addr = document.getElementById("addr").value;
+
+  if(food=="" || qty=="" || addr==""){
+    alert("⚠ Please fill all fields first!");
+    return;
+  }
+
+  alert("🎉 Donation Submitted Successfully!");
+
+  // DASHBOARD CONNECT
+  window.location.href = "dashboard.html";
+}
+</script>
+
+</body>
+</html>
