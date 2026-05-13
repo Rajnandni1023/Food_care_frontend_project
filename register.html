@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head><!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  height:100vh;
+  display:flex;
+}
+
+/* LEFT SIDE INFO PANEL */
+.info{
+  width:50%;
+  background: linear-gradient(120deg,#43cea2,#185a9d);
+  color:white;
+  padding:40px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.info h1{
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+.info p{
+  font-size:14px;
+  line-height:1.6;
+}
+
+.food-box{
+  background:rgba(255,255,255,0.2);
+  padding:15px;
+  margin-top:15px;
+  border-radius:12px;
+}
+
+/* RIGHT SIDE FORM */
+.form{
+  width:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(120deg,#f093fb,#f5576c);
+}
+
+.card{
+  width:300px;
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  text-align:center;
+}
+
+input{
+  width:90%;
+  padding:10px;
+  margin:8px 0;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+button{
+  width:100%;
+  padding:10px;
+  background:#00c853;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:16px;
+}
+
+button:hover{
+  background:#009624;
+}
+</style>
+</head>
+
+<body>
+
+<!-- LEFT INFO SECTION -->
+<div class="info">
+
+  <h1>🍲 Food Waste Awareness</h1>
+
+  <p>
+    Every year tons of food is wasted while many people sleep hungry.
+    This system helps connect donors and needy people.
+  </p>
+
+  <div class="food-box">
+    <h3>🥗 Why Food Donation?</h3>
+    <p>- Reduce hunger<br>
+       - Save environment<br>
+       - Support society
+    </p>
+  </div>
+
+  <div class="food-box">
+    <h3>🍛 Common Donated Foods</h3>
+    <p>Rice, Roti, Fruits, Vegetables, Packaged food</p>
+  </div>
+
+  <div class="food-box">
+    <h3>🌍 Impact</h3>
+    <p>Small donation can feed many lives</p>
+  </div>
+
+</div>
+
+<!-- RIGHT FORM SECTION -->
+<div class="form">
+
+  <div class="card">
+
+    <h2>Register</h2>
+
+    <input placeholder="Full Name">
+    <input placeholder="Email">
+    <input placeholder="Password">
+
+    <button onclick="goLogin()">Create Account</button>
+
+  </div>
+
+</div>
+
+<script>
+function goLogin(){
+  window.location.href="login.html";
+}
+</script>
+
+</body>
+</html>
