@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Waste System</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 350px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  color: #ff4d4d;
+  font-size: 26px;
+}
+
+p {
+  color: #555;
+  font-size: 14px;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: #ff4d4d;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #e60000;
+}
+</style>
+</head>
+
+<body>
+  
+
+<div class="card">
+  
+
+  <h1>Food Waste System 🌱</h1>
+
+  <p>
+    Reduce waste, share food, help people and make a better world.
+  </p>
+
+  <!-- REGISTER BUTTON -->
+  <button class="btn" onclick="goRegister()">
+    Get Started
+  </button>
+
+</div>
+
+<script>
+function goRegister(){
+  window.location.href = "register.html";
+}
+</script>
+
+</body>
+</html>
